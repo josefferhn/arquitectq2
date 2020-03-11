@@ -260,34 +260,56 @@ header h1{
 }
 .icon-up{
     position: relative;
-    padding: 15% 0;
     background-color: #f2f4f8;
+    height: 200px;
+    overflow: hidden;
 }
 .icono{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: grid;
     align-content: center;
     text-align: center;
-    justify-content: center;
     color: #d80808;
     font-size: 40px;
+    top: 0;
+    transition: all 0.3s ease-out;
 }
 .texto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: grid;
     align-content: center;
     text-align: center;
     opacity: 0;
+    top: 100%;
+    transition: all 0.3s ease-out;
 }
 .icon-up:hover .icono{
     opacity: 0;
+    top:-100%;
+    transition: all 0.3s ease-out;
 }
 .icon-up:hover .texto{
     opacity: 1;
+    top: 0;
+    transition: all 0.3s ease-in;
 }
 
 
 
+#map{
+    width:100%;
+    height: 400px;
+}
 
-
+.form-control{
+    background-color: #f2f4f8;
+    border-radius: 0;
+    border:0;
+}
 
 
 
